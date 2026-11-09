@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Casa Campesina · FrescoAlerta</title>
+  <meta name="description" content="Proyecto final Lean UX (Universidad EAN · Trend + Tech): FrescoAlerta, una propuesta para detectar a tiempo la maduración y el deterioro de frutas y verduras en La Casa Campesina, un fruver de Suba Bilbao, Bogotá.">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#1F502F">
+  <meta property="og:title" content="La Casa Campesina · FrescoAlerta">
+  <meta property="og:description" content="Fruta en su punto, siempre a tiempo. Proyecto final Lean UX · Universidad EAN.">
+  <meta property="og:image" content="assets/fachada.webp">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='48' cy='52' r='44' fill='%23fff'/%3E%3Ccircle cx='48' cy='52' r='37' fill='%231F502F'/%3E%3Ccircle cx='48' cy='52' r='27' fill='%236AAA4A'/%3E%3Ccircle cx='80' cy='16' r='13' fill='%23E7823A' stroke='%23fff' stroke-width='4'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <!-- Logo reutilizable -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="logo" viewBox="0 0 100 100">
+      <circle cx="48" cy="52" r="44" fill="#fff"/>
+      <circle cx="48" cy="52" r="37" fill="#1F502F"/>
+      <circle cx="48" cy="52" r="27" fill="#6AAA4A"/>
+      <circle cx="80" cy="16" r="13" fill="#E7823A" stroke="#fff" stroke-width="4"/>
+    </symbol>
+  </svg>
+
+  <header class="topbar">
+    <div class="wrap topbar__in">
+      <a class="brand" href="#inicio" aria-label="La Casa Campesina, ir al inicio">
+        <svg class="brand__logo" aria-hidden="true"><use href="#logo"/></svg>
+        <span>La Casa Campesina</span>
+      </a>
+      <nav aria-label="Secciones">
+        <ul class="nav">
+          <li><a href="#problema">Problema</a></li>
+          <li><a href="#luz-mery">Luz Mery</a></li>
+          <li><a href="#solucion">Solución</a></li>
+          <li><a href="#prototipo">Prototipo</a></li>
+          <li><a href="#equipo">Equipo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- 1. Hero -->
+    <section class="hero" id="inicio" aria-labelledby="titulo">
+      <div class="wrap hero__in">
+        <svg class="hero__logo" aria-hidden="true"><use href="#logo"/></svg>
+        <div>
+          <p class="eyebrow">Proyecto final · Lean UX</p>
+          <h1 id="titulo">La Casa Campesina</h1>
+          <p class="hero__sub">«Frescura bajo control»</p>
+          <p class="hero__lead">Detección temprana del deterioro de frutas y verduras en un fruver de Suba Bilbao, Bogotá.</p>
+          <p class="hero__brand"><strong>FrescoAlerta</strong> · «Fruta en su punto, siempre a tiempo»</p>
+          <div class="ctas">
+            <a class="btn btn--primary" data-link="prototipo" href="#prototipo">Ver prototipo</a>
+            <a class="btn btn--ghost" href="#luz-mery">Ver entrevista</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Problema -->
+    <section class="section" id="problema" aria-labelledby="t-problema">
+      <div class="wrap">
+        <h2 id="t-problema">El problema</h2>
+        <p class="intro">La fruta y la verdura se revisan a ojo todos los días. Cuando se nota el daño, ya es tarde.</p>
+        <ol class="flow">
+          <li>Compra de mercancía</li>
+          <li>Almacenada en estantes</li>
+          <li>Revisión diaria a ojo</li>
+          <li class="flow__bad">La fruta se daña</li>
+          <li>Pulpa, regalo o descarte</li>
+        </ol>
+        <div class="grid grid--2">
+          <article class="card card--orange">
+            <p class="stat">≈ $800.000 <span>por semana</span></p>
+            <p>En producto perdido, cerca de $41,6 millones al año. <strong>Es una estimación de la propietaria</strong>: todavía no está medido.</p>
+          </article>
+          <article class="card card--dark">
+            <h3>Sin registro de merma</h3>
+            <p>Hacen un inventario al final del día para decidir qué comprar, pero no se anota lo que se daña ni cuánto tarda en dañarse.</p>
+          </article>
+        </div>
+        <div class="photos">
+          <figure><img src="assets/fachada.webp" width="1000" height="750" loading="lazy" alt="Interior de La Casa Campesina con estantes de frutas y verduras y la caja al fondo"><figcaption>El fruver por dentro</figcaption></figure>
+          <figure><img src="assets/estantes.webp" width="800" height="1067" loading="lazy" alt="Estantes metálicos con tomates, limones, manzanas y otras frutas"><figcaption>Estantes y exhibición</figcaption></figure>
+          <figure><img src="assets/revision.webp" width="800" height="1067" loading="lazy" alt="Mano sosteniendo fruta con manchas de deterioro"><figcaption>Revisión diaria a ojo</figcaption></figure>
+          <figure><img src="assets/pulpa.webp" width="605" height="807" loading="lazy" alt="Bolsas de pulpa de fruta preparadas con producto que ya no se podía vender fresco"><figcaption>Lo dañado termina en pulpa</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Luz Mery -->
+    <section class="section section--alt" id="luz-mery" aria-labelledby="t-luz">
+      <div class="wrap">
+        <h2 id="t-luz">Conoce a Luz Mery</h2>
+        <div class="person">
+          <figure class="person__photo">
+            <img src="assets/luz-mery.webp" width="411" height="695" loading="lazy" alt="Luz Mery, propietaria de La Casa Campesina, sentada durante la entrevista">
+            <figcaption>Luz Mery, propietaria. Foto con su permiso.</figcaption>
+          </figure>
+          <div class="person__body">
+            <blockquote class="quote">Lo más molesto es estar pendiente y mirando la fruta: eso quita tiempo.</blockquote>
+            <p class="quote__src">Idea expresada por Luz Mery en la entrevista (paráfrasis).</p>
+            <ul class="findings">
+              <li><strong>Su día:</strong> abrir, organizar, ver qué rotar, surtir y atender.</li>
+              <li><strong>Compras:</strong> las hace su esposo; reciben la mercancía entre los dos.</li>
+              <li><strong>Lo que más se daña:</strong> fruta, papa criolla, arracacha y hortalizas.</li>
+              <li><strong>Cómo se siente:</strong> mal y triste, porque lo dañado ya no se puede vender.</li>
+              <li><strong>Lo que le serviría:</strong> un aviso anticipado por un medio fácil. Sabrá que funciona si bajan las pérdidas.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="video">
+          <iframe id="video-entrevista" title="Entrevista a Luz Mery, propietaria de La Casa Campesina" loading="lazy"
+            src="https://www.youtube-nocookie.com/embed/Y5393YsYWb8" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <p class="small"><a data-link="video" href="https://www.youtube.com/watch?v=Y5393YsYWb8" target="_blank" rel="noopener">Ver la entrevista en YouTube</a></p>
+      </div>
+    </section>
+
+    <!-- 4. Cómo funciona -->
+    <section class="section" id="solucion" aria-labelledby="t-sol">
+      <div class="wrap">
+        <h2 id="t-sol">Cómo funciona FrescoAlerta</h2>
+        <p class="intro">Cuatro pasos para saber qué vender primero y qué retirar, antes de perderlo.</p>
+        <ol class="steps">
+          <li class="step"><span class="step__n">1</span><h3>Medir</h3><p>Sensores en los estantes miden temperatura, humedad y gases (ESP32 o Arduino con DHT22 y MQ-135).</p></li>
+          <li class="step"><span class="step__n">2</span><h3>Observar</h3><p>Una cámara y un modelo de visión (Teachable Machine) clasifican la madurez por color.</p></li>
+          <li class="step"><span class="step__n">3</span><h3>Registrar</h3><p>Compras, ventas, descartes y lecturas quedan en una hoja de Google Sheets, con fecha y producto.</p></li>
+          <li class="step"><span class="step__n">4</span><h3>Avisar</h3><p>Llega una alerta por un medio fácil, como el celular, con la señal del semáforo.</p></li>
+        </ol>
+        <p class="note">FrescoAlerta es un apoyo a la decisión: no reemplaza el criterio de Luz Mery ni dice si un alimento es apto para comer. El sensor de gases es un indicador indirecto: no mide etileno de forma específica.</p>
+      </div>
+    </section>
+
+    <!-- 5. Semáforo -->
+    <section class="section section--alt" id="semaforo" aria-labelledby="t-sem">
+      <div class="wrap">
+        <h2 id="t-sem">El semáforo</h2>
+        <ul class="lights">
+          <li class="light light--green"><span class="light__dot" aria-hidden="true"></span><div><h3>Verde · En punto</h3><p>Todo normal: se sigue vendiendo como siempre.</p></div></li>
+          <li class="light light--yellow"><span class="light__dot" aria-hidden="true"></span><div><h3>Amarillo · Vender pronto</h3><p>Llevarlo adelante en la exhibición y priorizar su venta.</p></div></li>
+          <li class="light light--red"><span class="light__dot" aria-hidden="true"></span><div><h3>Rojo · Retirar y revisar</h3><p>Separarlo para que una persona lo revise: aprovecharlo en pulpa, regalarlo o descartarlo.</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 6. Impacto -->
+    <section class="section" id="impacto" aria-labelledby="t-imp">
+      <div class="wrap">
+        <h2 id="t-imp">Impacto esperado</h2>
+        <div class="grid grid--3">
+          <article class="card card--dark"><h3>Económico</h3><p>Menos producto descartado y compras mejor calibradas con datos.</p></article>
+          <article class="card card--leaf"><h3>Social</h3><p>Menos tiempo y estrés revisando a ojo, y fruta en su punto para familias y restaurantes.</p></article>
+          <article class="card card--orange"><h3>Ambiental</h3><p>Menos alimento en la basura. En Colombia se pierde o desperdicia el 34 % de los alimentos (DNP, 2016).</p></article>
+        </div>
+        <div class="goal">
+          <p class="goal__n">−20 %</p>
+          <p><strong>Meta de validación, no resultado:</strong> reducir 20 % el producto descartado frente a una línea base que primero se medirá durante varias semanas. Sobre la estimación de $800.000 semanales, serían unos $160.000 por semana.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Prototipo -->
+    <section class="section section--alt" id="prototipo" aria-labelledby="t-proto">
+      <div class="wrap">
+        <h2 id="t-proto">Prototipo</h2>
+        <div class="proto">
+          <div class="proto__frame" id="proto-frame">
+            <div class="proto__placeholder" id="proto-placeholder">
+              <svg aria-hidden="true" viewBox="0 0 48 48" width="48" height="48"><rect x="6" y="10" width="36" height="24" rx="3" fill="none" stroke="currentColor" stroke-width="3"/><path d="M18 40h12M24 34v6" stroke="currentColor" stroke-width="3"/></svg>
+              <p id="proto-status"><strong>Prototipo en desarrollo</strong><br>Simulación en Wokwi</p>
+            </div>
+          </div>
+          <div class="proto__info">
+            <p>La primera versión será una <strong>simulación en Wokwi</strong> (o Tinkercad). Mostrará:</p>
+            <ul>
+              <li>Lecturas simuladas de temperatura, humedad y gases.</li>
+              <li>Comparación con umbrales por producto.</li>
+              <li>El semáforo y un aviso de prueba.</li>
+              <li>El registro de lo que hace la usuaria.</li>
+            </ul>
+            <a class="btn btn--primary" data-link="prototipo" href="#prototipo">Ver prototipo</a>
+            <a class="btn btn--ghost btn--dark" data-link="pitch" href="#prototipo">Ver video pitch</a>
+            <p class="small">Las piezas físicas (carcasa en 3D y señal de colores en láser) son una propuesta para el FabLab; aún no están fabricadas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Equipo -->
+    <section class="section" id="equipo" aria-labelledby="t-eq">
+      <div class="wrap">
+        <h2 id="t-eq">Equipo</h2>
+        <div class="grid grid--2">
+          <article class="card card--dark">
+            <h3>Juan José Neira</h3>
+            <p class="role">Líder del proyecto</p>
+            <p>Contacto y entrevista con Luz Mery, validación con la usuaria, video pitch y revisión del documento.</p>
+          </article>
+          <article class="card card--orange">
+            <h3>Johan Nieto</h3>
+            <p class="role">Prototipo y diseño</p>
+            <p>Sensores y simulación en Wokwi, visión artificial con Teachable Machine, diseño de diapositivas, FabLab, registro de datos y alertas.</p>
+          </article>
+        </div>
+        <p class="center small">Universidad EAN · Trend + Tech · Metodología Lean UX · Noviembre de 2026</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__in">
+      <div class="brand brand--light">
+        <svg class="brand__logo" aria-hidden="true"><use href="#logo"/></svg>
+        <span>La Casa Campesina · FrescoAlerta</span>
+      </div>
+      <p>Proyecto académico de Juan José Neira y Johan Nieto · Universidad EAN, 2026.</p>
+      <p><a data-link="video" href="https://www.youtube.com/watch?v=Y5393YsYWb8" target="_blank" rel="noopener">Video de la entrevista con Luz Mery</a></p>
+      <p class="small">Fotos tomadas en La Casa Campesina con permiso de la propietaria. Dato nacional: Departamento Nacional de Planeación (2016).</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
