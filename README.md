@@ -1,5 +1,7 @@
 # La Casa Campesina · FrescoAlerta — página del proyecto
 
+**Página publicada:** https://johanstick14-ux.github.io/la-casa-campesina/
+
 Página informativa del proyecto final Lean UX (Universidad EAN · Trend + Tech, noviembre de 2026).
 Es HTML, CSS y JavaScript sin frameworks ni compilación: se publica tal cual en GitHub Pages.
 
